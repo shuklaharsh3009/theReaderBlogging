@@ -7,10 +7,10 @@
   },
   "engineStrict": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && next start",
+    "lint": "export NODE_OPTIONS=--openssl-legacy-provider && next lint"
   },
   "dependencies": {
     "graphql": "^15.6.1",
